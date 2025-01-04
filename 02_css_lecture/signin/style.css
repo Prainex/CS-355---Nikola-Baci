@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: greenyellow; 
+}
+
+.container{
+    display: flex;
+    border: 1px solid gray;
+    border-radius: 15px;
+    flex-direction: column;
+    padding: 20px 15px 20px 15px;
+    width: 300px;
+    background-color: white;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 35px;
+    width: 300px;
+}
+
+
+.field{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+h1 {
+    margin: 0;
+}
+
+input{
+    display: flex;
+    border-radius: 5px;
+    
+}

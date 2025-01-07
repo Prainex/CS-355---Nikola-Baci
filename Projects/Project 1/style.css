@@ -1,0 +1,15 @@
+body{
+    font-family: Arial;
+    /* display: flex; */
+    margin: 0;
+    justify-content: center;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 20px;    
+    
+}
+.Hello {
+    background-color: aliceblue;
+}

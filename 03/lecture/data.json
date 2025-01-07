@@ -1,0 +1,5 @@
+{
+    "name": "John Doe",
+    "favdinks": ["coffee", "redbull", "matcha"],
+    "isValid": false
+}

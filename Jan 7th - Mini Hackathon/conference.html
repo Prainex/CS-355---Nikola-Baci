@@ -3,27 +3,101 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>MHC Tech Conference</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body class="container">
         <header class="Introduction">
             <nav>
                 <img src="./assets/Kd46_qcG_400x400.jpg" width="50px" height="auto"> 
-                <div class="nav links">
-                    <a href="">About</a>
-                    <a href="">Schedule</a>
-                    <a href="">Speakers</a>
-                    <a href="">Contact</a>
+                <input type="button" value="Get Tickets">
+                <div class="nav-links">
+                    <a href="#About">About</a>
+                    <a href="#Schedule">Schedule</a>
+                    <a href="#Speakers">Speakers</a>
+                    <a href="#Contact">Contact</a>
                 </div>
             </nav>
-
-            <h1>MHC Tech Conference</h1>
-            <p>Countdown: </p>
-            <input type="button" value="About"></input>
+            <div> 
+                <h1>MHC Tech Conference</h1>
+                <p id="demo"></p>
+                <script>
+                    // Set the date we're counting down to
+                    var countDownDate = new Date("Jan 15, 2025 08:00:00").getTime();
+                    
+                    // Update the count down every 1 second
+                    var x = setInterval(function() {
+                    
+                      // Get today's date and time
+                      var now = new Date().getTime();
+                    
+                      // Find the distance between now and the count down date
+                      var distance = countDownDate - now;
+                    
+                      // Time calculations for days, hours, minutes and seconds
+                      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                    
+                      // Display the result in the element with id="demo"
+                      document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+                      + minutes + "m " + seconds + "s ";
+                    
+                      // If the count down is finished, write some text
+                      if (distance < 0) {
+                        clearInterval(x);
+                        document.getElementById("demo").innerHTML = "EXPIRED";
+                      }
+                    }, 1000);
+                    </script>
+            </div>
         </header>
 
-        <section class="Schedule">
+        <section>
+            <div class="carousel">
+                <button id="leftButton">&lt;</button>
+                <img id="photo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvwGIEKH1c6M7LQtnyaP4mfrav3V0eola-fw&s" alt="nature" width="600px" height="400px">
+                <button id="rightButton">&gt;</button>
+            </div>
+    
+            <script src="./script.js"></script>
+        </section>
+
+        <section class="stats">
+            <h1>1 Conference</h1>
+    
+            <div class="stat-items">
+                <div class="stat-i">
+                    <h1>3</h1>
+                    <h2>Days</h2>
+                </div>
+    
+                <div class="stat-i">
+                    <h1>400+</h1>
+                    <h2>Attendees</h2>
+                </div>   
+                
+                <div class="stat-i">
+                    <h1>100+</h1>
+                    <h2>Interviews</h2>
+                </div>
+    
+            </div>  
+               
+        </section>
+
+        <div class="About" id="About">
+            <h2>About</h2>
+            <p>Welcome to the MHC Tech Conference, a premier event that brings together the brightest minds in technology from around the world. This conference is a hub for innovation, networking, and learning, where industry leaders share insights on the latest trends and breakthroughs shaping the future.</p>
+
+            <p>Over the course of three exciting days, attendees will have the opportunity to participate in keynote speeches, panel discussions, and hands-on workshops. Topics will range from artificial intelligence and machine learning to cybersecurity and blockchain technology. Whether you're a seasoned professional or new to the tech scene, there's something for everyone.</p>
+            
+            <p>Join us to connect with like-minded professionals, discover cutting-edge solutions, and be inspired by visionary speakers. Let's collaborate to drive technological advancement and create impactful change in our rapidly evolving digital world.</p>
+            
+        </div>
+
+        <section class="schedule-section" id="Schedule">
             <table>
                 <thead>
                     <tr>
@@ -34,89 +108,71 @@
                     </tr>
                 </thead>
                 <tbody>
-                        <tr>
-                            <td>8 am</td>
-                            <td>Lorem ipsum odor amet, consectetuer adipiscing elit.</td>
-                            <td>Lorem ipsum odor amet, consectetuer adipiscing elit.</td>
-                            <td>Lorem ipsum odor amet, consectetuer adipiscing elit.</td>
-                        </tr>
-                        <tr>
-                            <td>9 am</td>
-                            <td>Lorem ipsum odor amet, consectetuer adipiscing elit.</td>
-                            <td>Lorem ipsum odor amet, consectetuer adipiscing elit.</td>
-                            <td>Lorem ipsum odor amet, consectetuer adipiscing elit.</td>
-                        </tr>
-                        <tr>
-                            <td>10 am</td>
-                            <td>Lorem ipsum odor amet, consectetuer adipiscing elit.</td>
-                            <td>Lorem ipsum odor amet, consectetuer adipiscing elit.</td>
-                            <td>Lorem ipsum odor amet, consectetuer adipiscing elit.</td>
-                        </tr>
-                        <tr>
-                            <td>11 am</td>
-                            <td>Lorem ipsum odor amet, consectetuer adipiscing elit.</td>
-                            <td>Lorem ipsum odor amet, consectetuer adipiscing elit.</td>
-                            <td>Lorem ipsum odor amet, consectetuer adipiscing elit.</td>
-                        </tr>
-                        <tr>
-                            <td>12 pm</td>
-                            <td>Lorem ipsum odor amet, consectetuer adipiscing elit.</td>
-                            <td>Lorem ipsum odor amet, consectetuer adipiscing elit.</td>
-                            <td>Lorem ipsum odor amet, consectetuer adipiscing elit.</td>
-                        </tr>
-                        <tr>
-                            <td>1 pm</td>
-                            <td>Lorem ipsum odor amet, consectetuer adipiscing elit.</td>
-                            <td>Lorem ipsum odor amet, consectetuer adipiscing elit.</td>
-                            <td>Lorem ipsum odor amet, consectetuer adipiscing elit.</td>
-                        </tr>
-                        <tr>
-                            <td>2 pm</td>
-                            <td>Lorem ipsum odor amet, consectetuer adipiscing elit.</td>
-                            <td>Lorem ipsum odor amet, consectetuer adipiscing elit.</td>
-                            <td>Lorem ipsum odor amet, consectetuer adipiscing elit.</td>
-                        </tr>
-                        <tr>
-                            <td>3 pm</td>
-                            <td>Lorem ipsum odor amet, consectetuer adipiscing elit.</td>
-                            <td>Lorem ipsum odor amet, consectetuer adipiscing elit.</td>
-                            <td>Lorem ipsum odor amet, consectetuer adipiscing elit.</td>
-                        </tr>
-                        <tr>
-                            <td>4 pm</td>
-                            <td>Lorem ipsum odor amet, consectetuer adipiscing elit.</td>
-                            <td>Lorem ipsum odor amet, consectetuer adipiscing elit.</td>
-                            <td>Lorem ipsum odor amet, consectetuer adipiscing elit.</td>
-                        </tr>
-                        <tr>
-                            <td>5 pm</td>
-                            <td>Lorem ipsum odor amet, consectetuer adipiscing elit.</td>
-                            <td>Lorem ipsum odor amet, consectetuer adipiscing elit.</td>
-                            <td>Lorem ipsum odor amet, consectetuer adipiscing elit.</td>
-                        </tr>
-                        <tr>
-                            <td>6 pm</td>
-                            <td>Lorem ipsum odor amet, consectetuer adipiscing elit.</td>
-                            <td>Lorem ipsum odor amet, consectetuer adipiscing elit.</td>
-                            <td>Lorem ipsum odor amet, consectetuer adipiscing elit.</td>
-                        </tr>
-                        <tr>
-                            <td>7 pm</td>
-                            <td>Lorem ipsum odor amet, consectetuer adipiscing elit.</td>
-                            <td>Lorem ipsum odor amet, consectetuer adipiscing elit.</td>
-                            <td>Lorem ipsum odor amet, consectetuer adipiscing elit.</td>
-                        </tr>
-                        <tr>
-                            <td>8 pm</td>
-                            <td>Lorem ipsum odor amet, consectetuer adipiscing elit.</td>
-                            <td>Lorem ipsum odor amet, consectetuer adipiscing elit.</td>
-                            <td>Lorem ipsum odor amet, consectetuer adipiscing elit.</td>
-                        </tr>                  
+                    <tr>
+                        <td>8 am</td>
+                        <td>Breakfast and Registration</td>
+                        <td>Morning Coffee Networking</td>
+                        <td>Breakfast and Tech Showcase</td>
+                    </tr>
+                    <tr>
+                        <td>9 am</td>
+                        <td>Keynote: "The Evolution of Artificial Intelligence"</td>
+                        <td>Keynote: "Scaling Your Business with Cloud Technology"</td>
+                        <td>Keynote: "Blockchain Beyond Cryptocurrencies"</td>
+                    </tr>
+                    <tr>
+                        <td>10 am</td>
+                        <td>Workshop: "AI-Powered Solutions for Real-World Problems"</td>
+                        <td>Workshop: "Serverless Architecture with AWS Lambda"</td>
+                        <td>Workshop: "Building a Decentralized Application (dApp)"</td>
+                    </tr>
+                    <tr>
+                        <td>11 am</td>
+                        <td>Talk: "The Intersection of AI and Ethics"</td>
+                        <td>Talk: "Cloud Security and Best Practices"</td>
+                        <td>Panel Discussion: "The Potential of NFTs in Various Industries"</td>
+                    </tr>
+                    <tr>
+                        <td>12 pm</td>
+                        <td>Networking Lunch</td>
+                        <td>Networking Lunch</td>
+                        <td>Networking Lunch</td>
+                    </tr>
+                    <tr>
+                        <td>1 pm</td>
+                        <td>Panel Discussion: "AI Startups Shaping the Future"</td>
+                        <td>Panel Discussion: "Challenges of Cloud Migration"</td>
+                        <td>Talk: "The Rise of Quantum Computing"</td>
+                    </tr>
+                    <tr>
+                        <td>2 pm</td>
+                        <td>Fireside Chat: "Overcoming Bias in Machine Learning"</td>
+                        <td>Hackathon Kickoff: "Build a Cloud-Driven Solution"</td>
+                        <td>Fireside Chat: "How Blockchain Can Enhance Supply Chains"</td>
+                    </tr>
+                    <tr>
+                        <td>3 pm</td>
+                        <td>Workshop: "Building AI-Driven Chatbots"</td>
+                        <td>Talk: "Kubernetes for Beginners"</td>
+                        <td>Workshop: "Smart Contracts Development with Solidity"</td>
+                    </tr>
+                    <tr>
+                        <td>4 pm</td>
+                        <td>Talk: "The Role of AI in Education"</td>
+                        <td>Workshop: "Optimizing Cloud Costs for Enterprises"</td>
+                        <td>Talk: "Using Blockchain for Social Good"</td>
+                    </tr>
+                    <tr>
+                        <td>5 pm</td>
+                        <td>Evening Mixer: "AI Professionals Meet & Greet"</td>
+                        <td>Keynote: "Future of Cloud Computing"</td>
+                        <td>Closing Keynote: "Emerging Tech and its Societal Impact"</td>
+                    </tr>
                 </tbody>
             </table>
         </section>
 
-        <section class="speaker-section">
+        <section class="speaker-section" id="Speakers">
             <div class="speaker">
                 <img src="./assets/Elon.jpg" alt="elon musk">
                 <h4>Elon Musk</h4>
@@ -134,7 +190,17 @@
             </div>
         </section>
 
-        <section>
+        <section class="Contact-section" id="Contact">
+
+            <form action="#" class="Contact_info">
+                <h2>Contact <span id="text_style">US</span></h2>
+                <input type="text" placeholder="name" class="form_input">
+                <input type="email" placeholder="email" class="form_input">
+                <input type="number" placeholder="phone number" class="form_input">
+                <textarea name="" id="input_field" cols="30" rows="10" placeholder="your message"></textarea>
+                <input type="submit" class="btn-sub">
+            </form>
+
             <footer>
                 <a href="#">Hours </a>
                 <a href="#">Conferences </a>

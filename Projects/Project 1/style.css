@@ -135,12 +135,12 @@ article p {
 }
 
 .Hackathons {
-    display: flex; /* Use flexbox for side-by-side alignment */
-    justify-content: center; /* Center the items */
-    align-items: flex-start; /* Align items at the top */
-    gap: 20px; /* Add space between the hackathon sections */
+    display: flex; 
+    justify-content: center; 
+    align-items: flex-start; 
+    gap: 20px; 
     margin: 20px auto;
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    flex-wrap: wrap; 
 }
 
 .Hackathons h2 {

@@ -8,22 +8,24 @@
     </head>
     <body>
         <header class="Hello">
-            <nav>
-                <a target="_blank" href="cs.html">Computer Science</a>
-                <a target="_blank" href="https://github.com/Prainex">GitHub</a>
-            </nav>
-            <h4>Hello I am,</h4>
-            <h1>Arvind Kumar Majumder</h1>
-            <img src="./pics/Arvind_Majumder.jpeg" width="200px" height="auto">
-            <h4>Software Engineering, Full-Stack Developer, CS Senior @ Queens College, City University of New York</h4>
+            <div class="greeting">
+                <h4>Hello I am,</h4>
+                <h1>Arvind Kumar Majumder</h1>
+                <div id="greeting-images">
+                    <img src="./pics/Arvind_Majumder.jpeg" width="300px" height="auto">
+                    <img src="https://pbs.twimg.com/media/GWUUEmKXYAII2rV?format=jpg&name=large" width="300px" height="auto">
+                    <img src="./pics/IMG_7148.jfif" width="500px" height="auto">
+                </div>
+                <h4 id="mini-intro">Software Engineering, Full-Stack Developer, CS Senior @ Queens College, City University of New York</h4>
+            </div>
         </header>
 
         <div class="Introduction">
-            <h2>Introduction</h2>
+            <h2>Who am I?</h2>
             <p>I'm an Ecuadorian & Indian B.S. CS student at Queens College. In 2022, I was a Professional 
                 Valorant Coach for Gen.G but have since closed that chapter to focus on my education.
                 Now I'm an incoming CS graduate with experience in Full-Stack development, AI engineering, 
-                Data Science, and U.S. Government work experience.
+                Data Science, and the U.S. Government.
             </p>
         </div>
         <br/>
@@ -31,53 +33,77 @@
             <h2>Projects</h2>
             <article>
                 <h3>Interactive Excel Reader</h3>
-                <img src="./pics/cunybpl.png" width="400px" height="auto" alt="">
+                <a href="https://github.com/Prainex/Interactive-Excel-File-Reader" target="_blank">
+                    <img src="./pics/cunybpl.png" alt="Interactive Excel Reader">
+                </a>
                 <p>Internship project developed for the CUNY Building Performance Lab.</p>
             </article>
             <article>
                 <h3>Personal Trainer AI Chatbot</h3>
-                <img src="./pics/AIchatbot.jpg" width="400px" height="auto" alt="">
+                <a href="https://github.com/Prainex/personal-trainer-ai" target="_blank">
+                    <img src="./pics/AIchatbot.jpg" alt="Personal Trainer AI Chatbot">
+                </a>
                 <p>Full-Stack project developed during Headstarter AI Fellowship Summer 2024.</p>
             </article>
-            <h3>Medicine Chatbot</h3>
-            <img src="./pics/Telemedicine.jpeg" width="400px" height="auto" alt="Full-Stack project developed during YHacks Fall 2024, 24-hour hackathon.">
-            <p></p>
-            <h3>Valorant Practice Tracker</h3>
-            <img src="./pics/Scrim Tracker.jpg" width="400px" height="auto">
-            <p>Full-Stack project developed to assist Valorant Teams tracking practice data.</p>
+            <article>
+                <h3>Medicine Chatbot</h3>
+                <a href="https://github.com/Prainex/medicine-chatbot" target="_blank">
+                    <img src="./pics/Telemedicine.jpeg" alt="Medicine Chatbot">
+                </a>
+                <p>Full-Stack project developed during YHacks Fall 2024, 24-hour hackathon.</p>
+            </article>
+            <article>
+                <h3>Valorant Practice Tracker</h3>
+                <a href="https://github.com/Prainex/valorant-leaderboard" target="_blank">
+                    <img src="./pics/Scrim Tracker.jpg" alt="Valorant Practice Tracker">
+                </a>
+                <p>Full-Stack project developed to assist Valorant Teams tracking practice data.</p>
+            </article>
         </div>
+        
         <br/>
         <div class="Experiences">
-            <!--Hackathon-->
-            <h2>Hackathons</h2>
-            <h4>Yale University: YHacks 2024</h4>
-            <img src="./pics/YHacks_October2024.jpeg" width="auto" height="300px">
+            <h2>Experiences</h2> 
+            <div class="Hackathons">
+                <h2>Hackathons</h2>
+                <div class="hack">
+                    <h4>Yale University: YHacks 2024</h4>
+                    <img src="./pics/YHacks_October2024.jpeg" alt="YHacks" height="300px" width="auto">
+                </div>
+                <div class="hack">
+                    <h4>Queens College: CS 355 Mini Hack</h4>
+                    <img src="" alt="Group E Classmates" height="300px" width="auto">
+                </div>
+            </div>
+            
             <br/>
-            <!--Certificates-->
-            <h2>Software Certificates</h2>
-            <ul>
-                <li> 
-                    <a target="_blank" href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/J.P.%20Morgan/Wb4yEmHvZrC2qxiyX_JPMorgan%20Chase%20&%20Co._mTf9DCqM93rN9h7yn_1719016310175_completion_certificate.pdf"> 
-                    <strong>JPMorgan</strong> - Software Engineering Lite Job Simulation 
-                    </a>
-                </li>
-                <li> 
-                    <a target="_blank" href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/9nvkLZzZEKAdrhjrX/7GYaMYxc6zEcbpjYL_9nvkLZzZEKAdrhjrX_mTf9DCqM93rN9h7yn_1734915145234_completion_certificate.pdf"> 
-                        <strong>New York Jobs CEO Coucil</strong> - Software Engineering Job Simulation 
-                    </a>
-                </li>
-                <li> 
-                    <a target="_blank" href="https://www.linkedin.com/learning/certificates/619e4b195737a8a2ebb535e7b5864a8f661a0ad256fed24f9758b6a4e2a259f1?u=35653204"> 
-                        <strong>LinkedIn</strong> Unix Essential Learning 
-                    </a>
-                </li>
-            </ul>
+            <div class="Certificates">
+                <!--Certificates-->
+                <h2>Software Certificates</h2>
+                <ul>
+                    <li> 
+                        <a target="_blank" href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/J.P.%20Morgan/Wb4yEmHvZrC2qxiyX_JPMorgan%20Chase%20&%20Co._mTf9DCqM93rN9h7yn_1719016310175_completion_certificate.pdf"> 
+                        <strong>JPMorgan</strong> - Software Engineering Lite Job Simulation 
+                        </a>
+                    </li>
+                    <li> 
+                        <a target="_blank" href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/9nvkLZzZEKAdrhjrX/7GYaMYxc6zEcbpjYL_9nvkLZzZEKAdrhjrX_mTf9DCqM93rN9h7yn_1734915145234_completion_certificate.pdf"> 
+                            <strong>New York Jobs CEO Coucil</strong> - Software Engineering Job Simulation 
+                        </a>
+                    </li>
+                    <li> 
+                        <a target="_blank" href="https://www.linkedin.com/learning/certificates/619e4b195737a8a2ebb535e7b5864a8f661a0ad256fed24f9758b6a4e2a259f1?u=35653204"> 
+                            <strong>LinkedIn</strong> Unix Essential Learning 
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
         <footer>
             <h4>Contacts and Socials</h4>
             <a href="mailto:majumderarvind@gmail.com">majumderarvind@gmail.com</a>
-            <a target="_blank" href="https://x.com/Prainexx">X/Twitter</a>
             <a target="_blank" href="https://instagram.com/arvind.amd/">Instagram</a>
+            <a target="_blank" href="https://x.com/Prainexx">X/Twitter</a>
             <a target="_blank" href="https://www.tiktok.com/@prainexx">Tiktok</a>
 
             <p>&copy; 2025 Arvind Majumder Portfolio. I have no idea if my rights are reserved.</p>

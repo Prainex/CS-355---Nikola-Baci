@@ -1,42 +1,49 @@
 body{
-    background-color: rgb(74, 131, 182);
+    background-color: #B4683F;
     flex-wrap: wrap;
+    margin: 0;
 }
 
 .Hello {
-    text-align: center;
+    font-Size: 10px;
+    background-color: #C87446;
+    padding: 20px;    
+    display: flex;
+    text-align: right;
+    justify-content: center;
+    align-items: center;
 }
 .greeting{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgb(74, 131, 182);
+    /* flex-direction: column; */
     margin: 0;
     padding: 0;
     color: white;
 }
 
-.greeting h4, h1 {
-    margin: 0;
-    padding: 5px 0;
+.greeting h1 {
+    display: flex;
+    flex-direction: column;
+    font-size: 40px;
+    margin-top: 0;
+    padding: 0;
+}
+
+.greeting h4{
 }
 
 #greeting-images {
-    display: flex;
-    justify-content: space-between; 
-    gap: 10px;
-    flex-wrap: wrap;
-}
-
-#greeting-images img{
-    border-radius: 15px;
+    margin: 30px;
 }
 
 #mini-intro {
+    display: flex;
+    flex-direction: column;
     margin-top: 20px;
-    font-size: 20px;
+    font-size: 40px;
     font-weight: bold;
     color: #cccccc;
+    text-align: left;
+
 }
 
 .Introduction{
@@ -44,9 +51,7 @@ body{
     text-align: right;
     justify-content: center;
     align-items: center;
-    border-radius: 30px;
-    background-color: cadetblue;
-    flex-wrap: wrap;
+    background-color: #bd6e36;
 }
 
 .Introduction h2{   

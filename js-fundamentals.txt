@@ -1,0 +1,275 @@
+### JavaScript Fundamentals Crash Course
+
+#### 1. **Introduction to JavaScript**
+JavaScript is a high-level, dynamic programming language primarily used for enhancing web pages, making them interactive and dynamic.
+
+---
+
+#### 2. **Variables and Types**
+Variables store data values. JavaScript has three main ways to declare variables:
+
+- `var` (function-scoped, outdated)
+- `let` (block-scoped, recommended for mutable values)
+- `const` (block-scoped, for constants)
+
+Example:
+```javascript
+let name = "John"; // String
+const age = 30;    // Number
+var isActive = true; // Boolean
+```
+
+Types in JavaScript:
+- Primitive: `String`, `Number`, `Boolean`, `Undefined`, `Null`, `Symbol`, `BigInt`
+- Reference: Objects, Arrays, Functions
+
+---
+
+#### 3. **Control Statements**
+Control flow allows decisions and looping.
+
+**Conditional Statements:**
+- `if`, `else if`, `else`
+
+Example:
+```javascript
+if (age > 18) {
+  console.log("Adult");
+} else {
+  console.log("Minor");
+}
+```
+
+**Switch Statements:**
+Useful for multiple conditions:
+```javascript
+switch (day) {
+  case 1:
+    console.log("Monday");
+    break;
+  case 2:
+    console.log("Tuesday");
+    break;
+  default:
+    console.log("Another day");
+}
+```
+
+---
+
+#### 4. **Arrays**
+An array is a collection of elements:
+```javascript
+let fruits = ["Apple", "Banana", "Cherry"];
+console.log(fruits[0]); // "Apple"
+```
+
+Common Methods:
+
+**`push()`, `pop()`, `shift()`, `unshift()`**
+- `push()`: Adds an element to the end of the array.
+  ```javascript
+  fruits.push("Mango");
+  console.log(fruits); // ["Apple", "Banana", "Cherry", "Mango"]
+  ```
+- `pop()`: Removes the last element from the array.
+  ```javascript
+  fruits.pop();
+  console.log(fruits); // ["Apple", "Banana", "Cherry"]
+  ```
+- `shift()`: Removes the first element from the array.
+  ```javascript
+  fruits.shift();
+  console.log(fruits); // ["Banana", "Cherry"]
+  ```
+- `unshift()`: Adds an element to the beginning of the array.
+  ```javascript
+  fruits.unshift("Grapes");
+  console.log(fruits); // ["Grapes", "Banana", "Cherry"]
+  ```
+
+**`slice()`, `splice()`**
+- `slice()`: Extracts a portion of an array without modifying the original array.
+  ```javascript
+  let sliced = fruits.slice(1, 3);
+  console.log(sliced); // ["Banana", "Cherry"]
+  console.log(fruits); // ["Grapes", "Banana", "Cherry"]
+  ```
+- `splice()`: Modifies an array by adding/removing elements.
+  ```javascript
+  fruits.splice(1, 1, "Peach", "Pineapple");
+  console.log(fruits); // ["Grapes", "Peach", "Pineapple", "Cherry"]
+  ```
+
+**`forEach()`, `map()`, `filter()`**
+- `forEach()`: Executes a function for each element in the array.
+  ```javascript
+  fruits.forEach(fruit => console.log(fruit));
+  // Grapes
+  // Peach
+  // Pineapple
+  // Cherry
+  ```
+- `map()`: Creates a new array by transforming each element.
+  ```javascript
+  let lengths = fruits.map(fruit => fruit.length);
+  console.log(lengths); // [6, 5, 9, 6]
+  ```
+- `filter()`: Creates a new array with elements that match a condition.
+  ```javascript
+  let filtered = fruits.filter(fruit => fruit.includes("e"));
+  console.log(filtered); // ["Grapes", "Peach", "Pineapple"]
+  ```
+
+---
+
+#### 5. **Loops**
+
+**For Loop:**
+```javascript
+for (let i = 0; i < 5; i++) {
+  console.log(i);
+}
+```
+
+**While Loop:**
+```javascript
+let i = 0;
+while (i < 5) {
+  console.log(i);
+  i++;
+}
+```
+
+**For...of (Arrays):**
+```javascript
+for (const fruit of fruits) {
+  console.log(fruit);
+}
+```
+
+**For...in (Objects):**
+```javascript
+const person = { name: "John", age: 30 };
+for (const key in person) {
+  console.log(key, person[key]);
+}
+```
+
+---
+
+#### 6. **Functions**
+Functions encapsulate reusable logic.
+
+**Function Declaration:**
+```javascript
+function greet(...names) {
+  return names.map(name => `Hello, ${name}!`).join(" ");
+}
+console.log(greet("Alice", "Bob"));
+```
+
+**Arrow Functions:**
+```javascript
+const add = (...args) => args.reduce((sum, num) => sum + num, 0);
+console.log(add(5, 3, 2));
+```
+
+**Anonymous Functions:**
+```javascript
+setTimeout(function() {
+  console.log("This runs later");
+}, 1000);
+```
+
+---
+
+#### 7. **Recursion**
+Recursion is when a function calls itself.
+
+Example: Factorial
+```javascript
+function factorial(n) {
+  if (n === 0) return 1;
+  return n * factorial(n - 1);
+}
+console.log(factorial(5)); // 120
+```
+
+---
+
+#### 8. **Objects**
+Objects store key-value pairs:
+```javascript
+const car = {
+  make: "Toyota",
+  model: "Corolla",
+  year: 2020,
+  start: function() {
+    console.log("Engine started");
+  }
+};
+console.log(car.make); // "Toyota"
+car.start();
+```
+
+---
+
+#### 9. **ES6+ Features**
+
+- **Template Literals:**
+```javascript
+const name = "Alice";
+console.log(`Hello, ${name}!`);
+```
+
+- **Destructuring:**
+```javascript
+const [a, b] = [1, 2];
+const { make, model } = car;
+```
+
+- **Spread Operator:**
+```javascript
+const arr1 = [1, 2];
+const arr2 = [...arr1, 3, 4];
+```
+
+- **Default Parameters:**
+```javascript
+function multiply(a, b = 1) {
+  return a * b;
+}
+```
+
+---
+
+#### 10. **DOM Manipulation**
+Manipulate web elements using JavaScript:
+```javascript
+const element = document.getElementById("myDiv");
+element.textContent = "Hello, World!";
+element.style.color = "blue";
+```
+
+---
+
+#### 11. **Event Handling**
+Respond to user interactions:
+```javascript
+document.querySelector("button").addEventListener("click", () => {
+  alert("Button clicked!");
+});
+```
+
+---
+
+### Practice Exercises
+1. Write a function to reverse a string.
+2. Create an array of numbers and find their sum.
+3. Write a function to calculate Fibonacci numbers using recursion.
+4. Use a loop to print the elements of an array in reverse order.
+
+
+
+

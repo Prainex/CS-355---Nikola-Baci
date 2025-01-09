@@ -1,0 +1,94 @@
+Assignment 1: Design a Museum Website
+Unique Feature: Interactive image gallery with modal view.
+Deliverables:
+Homepage: Includes a header, navigation bar, and a hero section with a background image.
+About Section: Brief description of the museum.
+Gallery Section: Interactive image gallery where clicking an image opens it in a modal view.
+Contact Section: Form with fields for name, email, and message.
+
+
+
+Assignment 2: Design a Hair Salon Website
+Unique Feature: Booking form with dropdown for services and date selection.
+Deliverables:
+Homepage: Includes a header with the salon's name and tagline.
+Services Section: List of services offered with pricing.
+Booking Section: Form with dropdowns for selecting service, date, and time.
+Footer: Includes contact information and social media icons.
+
+
+
+Assignment 3: Design a Pizza Shop Website
+Unique Feature: Menu with an interactive "Add to Cart" simulation.
+Deliverables:
+Homepage: Hero section with a call-to-action button.
+Menu Section: List of pizzas with "Add to Cart" buttons (use JavaScript to show the cart count).
+About Section: Description of the pizza shop.
+Contact Section: Includes a map (static image) and phone number.
+
+
+
+Assignment 4: Design a Fitness Studio Website
+Unique Feature: Timetable for fitness classes with hover effects to show more details.
+Deliverables:
+Homepage: Header, nav bar, and hero section with motivational quotes.
+Classes Section: Timetable styled as a grid; hover over each class to see more details.
+Trainers Section: Cards with trainer images and short bios.
+Footer: Includes links to social media and a subscription form for a newsletter.
+
+
+
+Assignment 5: Design a Library Website
+Unique Feature: Search bar to filter book genres dynamically.
+Deliverables:
+Homepage: Header with library name and navigation bar.
+Book Section: Grid of books categorized by genre.
+Search Feature: JavaScript-powered input field that filters books by genre in real-time.
+Footer: Contact details and library hours.
+
+
+
+Assignment 6: Design a Travel Agency Website
+Unique Feature: Carousel for featured destinations.
+Deliverables:
+Homepage: Header, nav bar, and a carousel showcasing top destinations.
+Destinations Section: Cards for destinations with images and descriptions.
+Contact Section: Form for trip inquiries.
+Footer: Includes a subscription form and social media links.
+
+
+
+Assignment 7: Design a Photography Portfolio Website
+Unique Feature: Lightbox effect for viewing photos.
+Deliverables:
+Homepage: Hero section with a photographer's profile photo and tagline.
+Portfolio Section: Image grid with a lightbox effect for enlarging photos.
+Services Section: List of photography packages.
+Contact Section: Form for inquiries.
+
+
+
+Assignment 8: Design a Tech Conference Website
+Unique Feature: Countdown timer to the event.
+Deliverables:
+Homepage: Header with event name and countdown timer.
+Schedule Section: Timetable of conference events.
+Speakers Section: Cards with speaker profiles.
+Footer: Contact information and links to buy tickets.
+
+
+****
+General Layout Components for All Assignments:
+Header: Includes logo and navigation bar.
+Navigation Bar: Links to different sections (use anchor links).
+Main Content: Organized into sections with appropriate headings and content.
+Buttons: Styled for actions like "Learn More" or "Submit."
+Footer: Includes contact info and links.
+Sidebars (Optional): For secondary navigation or additional content.
+****
+
+
+
+
+
+

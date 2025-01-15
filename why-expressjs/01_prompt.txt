@@ -1,0 +1,27 @@
+Why we need ExpressJS?
+To answer this question, we first need to experience the pain of working with pure NodeJS backend.
+
+To Do:
+Set up a NodeJS server and give this page (index.html) to the client when they navigate to the root directory of
+localhost:3000
+
+Before, you code the server, double-click and view the index.html file. It is a simple web page for MLK with a title, 3 images and a simple style.css. Your task is to set up the server to display the webpage exactly like that.
+
+---
+
+Done? Then, now it's time to explore ExpressJS. 
+
+In order to use ExpressJS we need to install it. Open the terminal and type:
+
+```js
+npm install express
+```
+
+Note the new files and the big folder created! These are used by npm (node package manager), and it means that ExpressJS is installed and ready to use.
+
+Now let's spin our very first ExpressJS server.
+
+
+
+
+

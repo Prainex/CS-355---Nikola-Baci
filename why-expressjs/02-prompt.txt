@@ -1,0 +1,20 @@
+ExpressJS Starter Package
+
+You can build ExpressJS server from scratch as we did in the first exercise, however there is a simpler way. With the following command in you terminal, you will be able to create a starter project in less than 30 seconds.
+
+```js
+	npx express-generator --view=ejs
+```
+
+Type this in your terminal and take 5 minutes to explore the files and folders created.
+In order to start this new pre-packaged server you have to install all the dependencies that are listed in the package.json:
+
+```js 
+	npm install
+```
+
+and then you are ready to start the server doing:
+
+```js
+	npm start
+```
